@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+        }
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .product h2, .product p, .product span {
+            margin: 0 0 10px 0;
+        }
+        .feedback-form input, .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Transport Store</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <h2>Product Name</h2>
+            <p>Description about the product.</p>
+            <span>Price: $100</span>
+        </div>
+        <!-- Repeat the above div for each product -->
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form class="feedback-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>© 2022 Online Transport Store</p>
+    </footer>
+    <script>
+        document.querySelector('.feedback-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message!');
+        });
+    </script>
+</body>
+</html>
